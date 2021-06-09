@@ -1,0 +1,269 @@
+<script id="ch0104/01">
+    var num = Number(prompt());
+    if (num > 0)
+        console.log(positive);
+    else if (num < 0)
+        console.log(negative);
+    else 
+        console.log(zero);
+</script>
+
+<script id="ch0104/02">
+    var num = Number(prompt());
+    console.log(Math.abs(num).toFixed(2));
+
+</script>
+
+<script id="ch0104/03">
+    var num = Number(prompt());
+    if (num % 2 == 0)
+        console.log('even');
+    else 
+        console.log('odd');
+</script>
+
+<script id="ch0104/04">
+    var ch = prompt();
+    var num = ch.charCodeAt();
+    if (num % 2 == 0) 
+        console.log('NO');
+    else              
+        console.log('YES');
+</script>
+
+<script id="ch0104/05">
+    debugger
+    var num1 = Number(prompt());
+    var ch = prompt();
+    var num2 = Number(prompt());
+    if (num1 > num2) 
+        console.log('>');
+    else if (num1 < num2) 
+        console.log('<');
+    else             
+        console.log('=');
+</script>
+
+<script id="ch0104/06">
+    var num = Number(prompt());
+    if (10 <= num <= 99)
+        console.log('1');
+    else 
+        console.log('0');
+</script>
+
+<script id="ch0104/07">
+    var num1 = Number(prompt());
+    var ch = prompt();
+    var num2 = Number(prompt());
+    if (num1 >= 10 || num2 >= 20)
+        console.log('1');
+    else 
+        console.log('0');
+</script>
+
+<script id="ch0104/08">
+    var num = Number(prompt());
+    if (num % 3 == 0 && num % 5 == 0)
+        console.log('YES');
+    else 
+        console.log('NO');
+</script>
+
+<script id="ch0104/09">
+    var num = Number(prompt());
+    var divider1 = 3;
+    var divider2 = 5;
+    var divider3 = 7;
+    if (num % divider1 == 0 && num % divider2 == 0 && num % divider3 == 0)
+        console.log(divider1 + ' ' + divider2 + ' ' + divider3);
+    else if (num % divider1 == 0 && num % divider2 == 0)
+        console.log(divider1 + ' ' + divider2);
+    else if (num % divider1 == 0 && num % divider3 == 0)
+        console.log(divider1 + ' ' + divider3);
+    else if (num % divider2 == 0 && num % divider3 == 0)
+        console.log(divider2 + ' ' + divider3);
+    else if (num % divider1 == 0)
+        console(divider1);
+    else if (num % divider2 == 0)
+        console.log(divider2);
+    else if (num % divider3 == 0)
+        console.log(divider3);
+    else 
+        console.log('n');
+</script>
+
+<script id="ch0104/10">
+    var score1 = Number(prompt());
+    var score2 = Number(prompt());
+    if (score1 < 60 || score2 < 60)
+        console.log('1');
+    else 
+        console.log('0');
+</script>
+
+<script id="ch0104/11">
+    var date = Number(prompt());
+    if (date == 1 || date == 3 || date == 5)
+        console.log('NO');
+    else 
+        console.log('YES');
+</script>
+
+<script id="ch0104/12">
+    var distance = Number(prompt());
+    var bikeTime = distance / 3 + 27 + 23;
+    var walkTime = distance / 1.2;
+    if (bikeTime > walkTime)
+        console.log('Walk');
+    else if (bikeTime < walkTime)
+        console.log('Bike');
+    else 
+        console.log('All');
+</script>
+
+<script id="ch0104/13">
+    var num = Number(prompt());
+    var res;
+    if (0 <= num < 5)
+        res = -num + 2.5;
+    else if (5 <= num < 10)
+        res = 2 - 1.5 * (num - 3) * (num - 3);
+    else 
+        res = num / 2 - 1.5;
+    console.log(res.toFixed(3));
+</script>
+
+<script id="ch0104/14">
+    var weight = Number(prompt());
+    var ch = prompt();
+    var flag = prompt();
+    var money = 8 + Math.ceil((weight - 1000) / 500) * 4;
+    if (flag == 'y')
+        money += 5;
+    console.log(money);
+</script>
+
+<script id="ch0104/15">
+    var num1 = Number(prompt());
+    var char1 = prompt();
+    var num2 = Number(prompt());
+    var char2 = prompt();
+    var num3 = Number(prompt());
+    var max = -1;
+    if (num1 > max)
+        max = num1;
+    if (num2 > max)
+        max = num2;
+    if (num3 > max)
+        max = num3;
+    console.log(max);
+</script>
+
+<script id="ch0104/16">
+    var num1 = Number(prompt());
+    var char = prompt();
+    var num2 = Number(prompt());
+    var char = prompt();
+    var num3 = Number(prompt());
+    if (num1 + num2 > num3 && num1 + num3 > num2 && num2 + num3 > num1)
+        console.log('yes');
+    else 
+        console.log('no');
+</script> 
+
+<script id="ch0104/17">
+    var year = Number(prompt());
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 ==0)
+        console.log('Y');
+    else 
+        console.log('N');
+</script>
+
+<script id="ch0104/18">
+    var x = Number(prompt());
+    var char = prompt();
+    var y = Number(prompt());
+    if (-1 <= x <= 1 && -1 <= y <= 1)
+        console.log('yes');
+    else 
+        console.log('no');
+</script>
+
+<script id="ch0104/19">
+    var operand1 = Number(prompt());
+    var operand2 = Number(prompt());
+    var operator = prompt();
+    var res;
+    switch (operator) {
+        case '+':
+            res = operand1 + operand2;
+            console.log(res);
+            break;
+        case '-':
+            res = operand1 - operand2;
+            console.log(res);
+            break;
+        case '*':
+            res = operand1 * operand2;
+            console.log(res);
+            break;
+        case '/':
+            if (operand2 == 0) {
+                console.log('Divided by zero!');
+            } else {
+                res = operand1 / operand2;
+                console.log(res);
+            }
+            break;
+        default:
+            console.log('Invalid operator!');
+    }
+</script>
+
+<script id="ch0104/20">
+    var num1 = Number(prompt());
+    var char = prompt();
+    var num2 = Number(prompt());
+    var char = prompt();
+    var num3 = Number(prompt());
+    var delta = num2 * num2 - 4 * num1 * num3;
+    if (delta == 0) {
+        console.log('x1=x2=' + ((-num2) / (2 * num1)).toFixed(5));
+    } else if (delta > 0) {
+        var x1 = ((-num2) + Math.sqrt(delta)) / (2 * num1);
+        var x2 = ((-num2) - Math.sqrt(delta)) / (2 * num1);
+        if (x1 < x2) {
+            var temp = x1;
+            x1 = x2;
+            x2 = temp;
+        }
+        console.log('x1=' + x1.toFixed(5) + ';' + 'x2=' + x2.toFixed(5));
+    } else {
+        var x = ((-num2) / (2 * num1)).toFixed(5);
+        var x11 = (Math.sqrt(-delta)) / (2 * num1);
+        var x12 = -(Math.sqrt(-delta)) / (2 * num1);
+        if (x11 < x12) {
+            var temp = x11;
+            x11 = x12;
+            x12 = temp;
+        }
+        if (x11 < 0) {
+            console.log('x1=' + x + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + x12.toFixed(5) + 'i');
+        } else if (x11 > 0 && x12 > 0) {
+            console.log('x1=' + x + '+' + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + '+' + x12.toFixed(5) + 'i');
+        } else if (x11 > 0 && x12 < 0) {
+            console.log('x1=' + x + '+' + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + x12.toFixed(5) + 'i');
+        }
+   }
+</script>
+
+<script id="ch0104/21">
+    var n = Number(prompt());
+    var char = prompt();
+    var x = Number(prompt());
+    var char = prompt();
+    var y = Number(prompt());
+    n -= Math.ceil(y / x);
+    console.log(n);
+</script>
